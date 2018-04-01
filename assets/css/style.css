@@ -1,13 +1,141 @@
-head {
-    
-}
-body {
-    background-color: #e8e8e8;
-    margin-left: 151px;
-    margin-right: 151px;
-}
-h1 {
-    color: #4eaaa4;
-    
+/* For the base text, unless I have special requirements for titles, etc.*/
 
+body {
+    font-family: 'Lato', arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    background-image: url("file:///Users/ananyabala/Desktop/testdir/homework/Basic-Portfolio/assets/images/circles-light.png");
+    background-color: teal;
+    margin: 0;
+}
+
+/* Removing bullets for the list I have*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* To make menu items lay flat*/
+
+li {
+    display: inline;
+}
+
+/*To customize Ananya Bala*/
+
+#floatleft {
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Header for About, Portfolio and Contact*/
+
+.floatright {
+    float: right;
+}
+
+/* Spacing between words on navigation */
+
+a {
+    display: block;
+    padding: 8px;
+}
+
+/* Header box wider than page */
+
+.header {
+    box-sizing: border-box;
+    border-color: #cccccc;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+    font-size: 17px;
+}
+
+/* Header specifically for 'Ananya Bala' */
+
+.header a {
+    float: left;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+/* Mouse hovering over menu items in the navigation pane*/
+
+.header a:hover {
+    background-color: teal;
+    color: #ffffff;
+}
+
+/*  Selected menu item from navigation pane */
+
+.header a.clicked {
+    background-color: teal;
+    color: #ffffff;
+    margin: 0;
+    border-radius: 0px;
+}
+
+/* Formatting 'About Me' */
+
+#titleofbody {
+    font-weight: bold;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+/* Formatting page width & layout for About Me text */
+
+.body {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: content-box;
+    height: 400px;
+}
+
+/*Footer*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: none;
+    float: left;
+    width: 180px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div.gallery:hover {
+    border: 2px dotted teal;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }

@@ -1,6 +1,7 @@
-/* For the base text, unless I have special requirements for titles, etc.*/
+/*BASIC WEBSITE THEME FORMATTING */
 
 body {
+    /*font, background theme, font size, etc.*/
     font-family: 'Lato', arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -10,7 +11,22 @@ body {
     margin: 0;
 }
 
-/* Removing bullets for the list I have*/
+/*Footer*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* HEADER FORMATTING */
+
+/* Removing bullets to list About, Portfolio, Contact:'menu' items, next to each other */
 
 ul {
     list-style-type: none;
@@ -32,7 +48,7 @@ li {
     font-weight: bold;
 }
 
-/* Header for About, Portfolio and Contact*/
+/* Aligning About, Portfolio and Contact to the left*/
 
 .floatright {
     float: right;
@@ -50,13 +66,16 @@ a {
 .header {
     box-sizing: border-box;
     border-color: #cccccc;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 150px;
+    padding-right: 150px;
     overflow: hidden;
     background-color: #ffffff;
     font-size: 17px;
 }
 
-/* Header specifically for 'Ananya Bala' */
+/* Teal highlight for 'Ananya Bala' */
 
 .header a {
     float: left;
@@ -72,7 +91,7 @@ a {
     color: #ffffff;
 }
 
-/*  Selected menu item from navigation pane */
+/*  Highlighting selected menu item from navigation pane */
 
 .header a.clicked {
     background-color: teal;
@@ -81,7 +100,9 @@ a {
     border-radius: 0px;
 }
 
-/* Formatting 'About Me' */
+/* ABOUT PAGE FORMAT */
+
+/* Formatting 'About Me' title */
 
 #titleofbody {
     font-weight: bold;
@@ -90,52 +111,101 @@ a {
     font-size: 24px;
 }
 
-/* Formatting page width & layout for About Me text */
+/* Formatting Hi! text */
+#hi {
+    color: #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formatting page width & layout for About, Portfolio */
 
 .body {
     background-color: #ffffff;
     border-color: #dddddd;
     max-width: 960px;
     margin: 0 auto;
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     box-sizing: content-box;
     height: 400px;
 }
 
-/*Footer*/
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #666666;
-    color: white;
-    text-align: center;
-    font-size: 12px;
-}
+/* PORTFOLIO PAGE SPECIFICS */
 
 div.gallery {
+    /* picture layout & underlying text */
     margin: 5px;
     border: none;
     float: left;
     width: 180px;
     background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: bold
 }
 
 div.gallery:hover {
+    /*hover dotted border */
     border: 2px dotted teal;
 }
 
 div.gallery img {
+    /*background for the images */
     width: 100%;
     height: auto;
     background-color: #ffffff;
 }
 
 div.desc {
+    /*Spacing between images and description text*/
     padding: 15px;
     text-align: center;
+}
+
+/* CONTACT PAGE FORMAT */
+
+/* Formatting page width & layout for Contact Page */
+
+.contactbody {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-sizing: content-box;
+    height: auto;
+}
+
+input[type=text], textarea {
+    /* text fields & text field titles */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit] {
+    /* The submit button */
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+    /*Form field titles */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4aaaa5;
 }

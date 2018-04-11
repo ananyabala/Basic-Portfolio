@@ -15,7 +15,7 @@ body {
 /*Footer*/
 
 .footer {
-    position:sticky;
+    position:fixed;
     margin-top: 200px;
     left: 0;
     bottom: 0;
@@ -157,6 +157,9 @@ div.gallery img {
     width: 100%;
     height: auto;
     background-color: #ffffff;
+}
+#backgroundwhite {
+    background-color: white;
 }
 
 div.desc {
